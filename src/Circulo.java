@@ -1,13 +1,7 @@
-public class Circulo extends FiguraGeometrica{
-    private double raio;
+public class Circulo extends Conica {
 
     public Circulo(String nome, double raio) {
-        super(nome);
-        this.raio = raio;
+        super(nome, raio, raio);
     }
 
-    @Override
-    public double calcularArea() {
-        return Math.PI * raio * raio;
-    }
 }

@@ -1,13 +1,6 @@
-public class Quadrado extends FiguraGeometrica{
-    private double lado;
+public class Quadrado extends Quadrilatero{
 
     public Quadrado(String nome, double lado) {
-        super(nome);
-        this.lado = lado;
-    }
-
-    @Override
-    public double calcularArea() {
-        return lado*lado;
+        super(nome, lado, lado);
     }
 }

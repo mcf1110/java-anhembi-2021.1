@@ -11,4 +11,10 @@ public class Triangulo extends FiguraGeometrica {
     public double calcularArea() {
         return base*altura/2;
     }
+
+    @Override
+    public String mostrarLados() {
+        return "Tenho três lados";
+    }
+
 }
