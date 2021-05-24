@@ -1,4 +1,4 @@
-public class Heroi extends  Personagem{
+public abstract class Heroi extends  Personagem{
     private String nomeDoAtaque;
 
     public Heroi(String nome, int vida, String nomeDoAtaque) {

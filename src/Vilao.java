@@ -1,4 +1,4 @@
-public class Vilao extends Personagem{
+public class Vilao extends Personagem implements Curavel{
 
     public Vilao(String nome, int vida) {
         super(nome, vida);
@@ -11,5 +11,10 @@ public class Vilao extends Personagem{
         }
         p.diminuirVida(10);
         this.consumirEnergia(15);
+    }
+
+    @Override
+    public void curar() {
+        this.diminuirVida(-10);
     }
 }
